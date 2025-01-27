@@ -30,6 +30,9 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Transformig Concepts into Seamless Experiences"
           />
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hi, I&apos;m Shkelqim Full-stack developer
+          </p>
         </div>
       </div>
     </div>
