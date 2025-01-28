@@ -1,6 +1,7 @@
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import { Spotlight } from "./ui/Spotlight";
 import PrimeButton from "./ui/PrimeButton";
+import { SlActionRedo } from "react-icons/sl";
 
 const Hero = () => {
   return (
@@ -36,7 +37,11 @@ const Hero = () => {
           </p>
           <a href="#about">
             {" "}
-            <PrimeButton title="Show my work" />
+            <PrimeButton
+              title="Show my work  "
+              icon={<SlActionRedo />}
+              position="right"
+            />
           </a>
         </div>
       </div>
