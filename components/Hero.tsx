@@ -1,5 +1,6 @@
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import { Spotlight } from "./ui/Spotlight";
+import PrimeButton from "./ui/PrimeButton";
 
 const Hero = () => {
   return (
@@ -33,6 +34,10 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, I&apos;m Shkelqim Full-stack developer
           </p>
+          <a href="#about">
+            {" "}
+            <PrimeButton title="Show my work" />
+          </a>
         </div>
       </div>
     </div>
