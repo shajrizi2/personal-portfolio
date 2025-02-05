@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { div } from "motion/react-client";
 
 export const BentoGrid = ({
   className,
@@ -31,7 +32,6 @@ export const BentoGridItem = ({
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-
   id: number;
   imgClassName?: string;
   img?: string;
@@ -43,7 +43,12 @@ export const BentoGridItem = ({
         "row-span-1 relative rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4 border-red-500",
         className
       )}
+      style={{
+        background:
+          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,6,45,1) 23%, rgba(99,60,153,1) 100%)",
+      }}
     >
+      <div className={`${id === 6}&& 'flex justify-center' `}></div>
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
           {title}
