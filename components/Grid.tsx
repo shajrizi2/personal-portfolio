@@ -9,8 +9,8 @@ const Grid = () => {
         {gridItems.map(
           ({
             id,
-            description,
             title,
+            description,
             className,
             imgClassName,
             img,
