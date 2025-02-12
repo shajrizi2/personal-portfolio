@@ -1,5 +1,8 @@
+"use client";
 import { cn } from "@/lib/utils";
+import { VortexDemoSecond } from "@/components/ui/VortexBg";
 import { div } from "motion/react-client";
+import { Vortex } from "./Vortex";
 
 export const BentoGrid = ({
   className,
@@ -71,6 +74,14 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+        {id === 6 && (
+          <VortexDemoSecond>
+            <div className="absolute z-50 flex items-center justify-center text-white font-bold">
+              <h1>Direct Vortex Content</h1>
+              {/* Add any elements here */}
+            </div>
+          </VortexDemoSecond>
+        )}
       </div>
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
