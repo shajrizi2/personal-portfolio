@@ -5,7 +5,7 @@ export function VortexDemoSecond({ children }: { children?: React.ReactNode }) {
   return (
     <div className="w-[calc(100%-4rem)] mx-auto rounded-md h-screen overflow-hidden">
       <Vortex
-        backgroundColor="darkBlue"
+        backgroundColor="dark"
         rangeY={800}
         particleCount={500}
         baseHue={120}
